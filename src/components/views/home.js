@@ -14,6 +14,9 @@ class HomeComponent extends LitElement {
     return html`
       <div class="dw-wrapper">
         <h1>Driving Wisely</h1>
+
+     
+        <button>BOOKING</button>   <button>MAP</button>   <button>SETTINGS</button>   <button>ACCOUNT </button>   <button>BOOKING</button>   <button>BOOKING</button>
       </div>
     `;
   }
