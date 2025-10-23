@@ -1,0 +1,24 @@
+{
+  "name": "drivingwisely",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/router": "^2.0.0",
+    "lit": "^3.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.36.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-lit": "^2.1.1",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.4"
+  }
+}
