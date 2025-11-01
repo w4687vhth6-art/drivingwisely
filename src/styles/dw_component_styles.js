@@ -6,7 +6,7 @@ export const sharedStyles = [
       font: arial;
     }
     .dw-wrapper {
-      margin: 10rem;
+      margin: 1rem;
     }
       h1 {
         color: blue;

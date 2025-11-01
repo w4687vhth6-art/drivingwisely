@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import { sharedStyles } from "../../styles/dw_component_styles";
+import { sharedStyles } from "../../styles/dw_component_styles.js";
 import "./navbar.js";
 
 class HomeComponent extends LitElement {
