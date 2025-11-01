@@ -15,7 +15,8 @@ class HomeComponent extends LitElement {
     return html`
       <div class="dw-wrapper">
       <dw-nav-bar></dw-nav-bar>
-        <h1>Driving Wisely</h1>
+        <h1>Locations Page</h1>
+
 
      
       </div>
