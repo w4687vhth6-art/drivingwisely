@@ -17,6 +17,7 @@ class NavBarComponent extends LitElement {
        <button @click="${this._handleHomeClick}">HOME</button> 
         <button>INSTRUCTORS</button>
         <button @click="${this._handleLocationsClick}">MAP</button>
+        <button @click="${this._handleMyaccountClick}">ACCOUNT</button>
         <button>SETTINGS</button> <button>ACCOUNT</button>
         <button>BOOKING</button> <button>BOOKING</button>
       </div>
@@ -28,6 +29,9 @@ class NavBarComponent extends LitElement {
   _handleLocationsClick() {
     Router.go("/locations");
   }
+  _handleMyaccountClick() {
+    Router.go("/myaccount");
+  } 
 }
 
 customElements.define("dw-nav-bar", NavBarComponent);
