@@ -1,6 +1,7 @@
 import { Router } from "@vaadin/router";
 import "/src/components/views/home.js";
 import "/src/components/views/locations.js";
+import "/src/components/views/myaccount.js";
 
 const routes = [
   {
@@ -11,6 +12,10 @@ const routes = [
     path: "/locations",
     component: "dw-locations",
   },
+  {
+    path: "/myaccount",
+    component: "dw-myaccount",
+  },  
   { path: "(.*)", redirect: "/" },
 ];
 
