@@ -16,11 +16,9 @@ const routes = [
     path: "/myaccount",
     component: "dw-myaccount",
   },
-    path: "/instructors",
-    component: "dw-instructors",  
-  }   ,  
 
-  { path: "(.*)", redirect: "/" },
+
+{ path: "(.*)", redirect: "/" },
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
