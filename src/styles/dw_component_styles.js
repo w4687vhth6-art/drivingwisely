@@ -9,10 +9,10 @@ export const sharedStyles = [
       margin: 1rem;
     }
       h1 {
-        color: blue;
+        color: red;
       }
         button {
-          background-color: lightblue;
+          background-color: red;
           border: none;
           padding: 10px 20px;
           font-size: 16px;
