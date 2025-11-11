@@ -24,3 +24,4 @@ class HomeComponent extends LitElement {
 }
 
 customElements.define("dw-home", HomeComponent);
+o
