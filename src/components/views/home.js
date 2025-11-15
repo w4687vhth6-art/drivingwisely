@@ -19,6 +19,8 @@ class HomeComponent extends LitElement {
         color: #ffffff;
         width: 50%;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin: 20px;
       }
     `,
   ];
