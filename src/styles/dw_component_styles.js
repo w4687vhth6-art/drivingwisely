@@ -21,5 +21,15 @@ export const sharedStyles = [
           width : 200px;
           border-radius : 8px;
         }
+          .box{ 
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
   `,
 ];

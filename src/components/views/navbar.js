@@ -18,8 +18,7 @@ class NavBarComponent extends LitElement {
         <button @click="${this._handleInstructorsClick}">INSTRUCTORS</button>
         <button @click="${this._handleLocationsClick}">MAP</button>
         <button @click="${this._handleMyaccountClick}">ACCOUNT</button>
-        <button>SETTINGS</button> <button>ACCOUNT</button>
-        <button>BOOKING</button> <button>BOOKING</button>
+     
       </div>
     `;
   }
