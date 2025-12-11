@@ -30,6 +30,7 @@ class HomeComponent extends LitElement {
             class="dw-input"
             id="email"
             name="email"
+          
           />
 <div class="password-wrapper">
   <label>Password:</label>

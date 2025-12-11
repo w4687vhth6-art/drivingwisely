@@ -30,7 +30,9 @@ export const sharedStyles = [
   justify-content: center;
   align-items: center;
   font-size: 24px;
+}
 
+{}
 </div>
 .center-form {
   display: flex;
