@@ -30,6 +30,21 @@ export const sharedStyles = [
   justify-content: center;
   align-items: center;
   font-size: 24px;
+
+</div>
+.center-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  gap: 20px;     
+.center-form input 
+  width: 300px;
+  padding: 12px 15px;
+  font-size: 18px;
 }
+  }
+
   `,
 ];

@@ -7,6 +7,8 @@ class HomeComponent extends LitElement {
 
   static styles = [sharedStyles];
 
+  
+
   constructor() {
     super();
   }
@@ -22,8 +24,19 @@ class HomeComponent extends LitElement {
       <div class="box" id="box1">1</div>
       <div class="box" id="box2">2</div>
       <div class="box" id="box3">3</div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="dw-input"
+            id="email"
+            name="email"
+          />
+<div class="password-wrapper">
+  <label>Password:</label>
+  <input type="password" />
+  
 
-      </div>
+
     `;
   }
 }
