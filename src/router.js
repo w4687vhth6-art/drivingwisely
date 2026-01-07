@@ -3,6 +3,7 @@ import "/src/components/views/home.js";
 import "/src/components/views/locations.js";
 import "/src/components/views/myaccount.js";
 import "/src/components/views/instructors.js";
+import "/src/components/views/booking.js";
 
 const routes = [
   {
@@ -22,6 +23,10 @@ const routes = [
     component: "dw-instructors",
   },
 
+  {
+    path: "/booking",
+    component: "dw-booking",
+  },
   { path: "(.*)", redirect: "/" },
 ];
 

@@ -1,29 +1,11 @@
-import { LitElement, html, css } from "lit";
-import { sharedStyles } from "../../styles/dw_component_styles";
+import { LitElement, html } from "lit";
+import { sharedStyles } from "../../styles/dw_component_styles.js";
 import "./navbar.js";
 
 class HomeComponent extends LitElement {
   static properties = {};
 
-  static styles = [
-    sharedStyles,
-    css`
-      .dw-home-main {
-        background-color: #45a20bff;
-        height: 50vh;
-      }
-      .dw-home-blurb {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background-color: #0b105bff;
-        color: #ffffff;
-        width: 50%;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        margin: 20px;
-      }
-    `,
-  ];
+  static styles = sharedStyles;
 
   constructor() {
     super();
@@ -33,33 +15,29 @@ class HomeComponent extends LitElement {
     return html`
       <div class="dw-wrapper">
         <dw-nav-bar></dw-nav-bar>
-        <div class="dw-home-main">
-          <h1>Driving Wisely</h1>
-          ${this._mainPage()}
-        </div>
-      </div>
-    `;
-  }
 
-  _mainPage() {
-    return html`${this._heading()}${this._blurb()}`;
-  }
-  _heading() {
-    return html`<h2>Welcome to Driving Wisely!</h2>`;
-  }
+        <section class="hero-card">
+          <div class="hero">
+            <div class="hero-left">
+              <h1 class="hero-title">Find the right driving instructor</h1>
+              <p class="hero-sub">
+                Search trusted instructors in your area<br />
+                and book lessons instantly.
+              </p>
 
-  _blurb() {
-    return html`
-      <div class="dw-home-blurb">
-        <p>Welcome to the Driving Wisely application!</p>
-        <p>
-          This app is designed to help you find the driving instructor of your
-          dreams.
-        </p>
-        <p>
-          Use the navigation bar above to explore different features and tools
-          we offer.
-        </p>
+              <div class="hero-search">
+                <input
+                  class="hero-input"
+                  type="text"
+                  placeholder="Enter your postcode or town"
+                />
+                <button class="hero-btn" type="button">Search</button>
+              </div>
+            </div>
+
+            <div class="hero-right"></div>
+          </div>
+        </section>
       </div>
     `;
   }
