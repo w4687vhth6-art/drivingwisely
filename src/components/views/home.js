@@ -5,7 +5,6 @@ import "./navbar.js";
 class HomeComponent extends LitElement {
   static properties = {};
 
-  // IMPORTANT: in your project sharedStyles is already an array
   static styles = sharedStyles;
 
   constructor() {
@@ -36,8 +35,7 @@ class HomeComponent extends LitElement {
               </div>
             </div>
 
-            <div class="hero-right">
-            </div>
+            <div class="hero-right"></div>
           </div>
         </section>
       </div>

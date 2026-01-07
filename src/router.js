@@ -2,7 +2,8 @@ import { Router } from "@vaadin/router";
 import "/src/components/views/home.js";
 import "/src/components/views/locations.js";
 import "/src/components/views/myaccount.js";
-import "./components/views/booking.js";
+import "/src/components/views/instructors.js";
+import "/src/components/views/booking.js";
 
 const routes = [
   {
@@ -17,13 +18,16 @@ const routes = [
     path: "/myaccount",
     component: "dw-myaccount",
   },
+  {
+    path: "/instructors",
+    component: "dw-instructors",
+  },
 
   {
-  path: "/booking",
-  component: "dw-booking",
-},
-
-{ path: "(.*)", redirect: "/" },
+    path: "/booking",
+    component: "dw-booking",
+  },
+  { path: "(.*)", redirect: "/" },
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
