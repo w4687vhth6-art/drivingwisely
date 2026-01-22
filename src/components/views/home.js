@@ -187,10 +187,34 @@ class HomeComponent extends LitElement {
                 <p>📞 020 3773 6020</p>
                 <p>✉️ support@drivingwisely.co.uk</p>
               </div>
+              <div class="footer-social">
+  <a
+    href="https://instagram.com/drivingwisely"
+    target="_blank"
+    rel="noopener"
+    aria-label="Instagram"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M7.75 2h8.5C19.99 2 22 4.01 22 6.25v11.5C22 19.99 19.99 22 16.25 22h-8.5C4.01 22 2 19.99 2 17.75V6.25C2 4.01 4.01 2 7.75 2z"/>
+      <path d="M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+      <circle cx="17.5" cy="6.5" r="1"/>
+    </svg>
+  </a>
+</div>
+
             </section>
           </div>
         </div>
       </div>
+
+      
+
     `;
   }
 }
