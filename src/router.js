@@ -4,6 +4,7 @@ import "/src/components/views/locations.js";
 import "/src/components/views/myaccount.js";
 import "/src/components/views/instructors.js";
 import "/src/components/views/booking.js";
+import "/src/components/views/about.js";
 
 const routes = [
   {
@@ -22,13 +23,17 @@ const routes = [
     path: "/instructors",
     component: "dw-instructors",
   },
-
   {
     path: "/booking",
     component: "dw-booking",
   },
+  {
+    path: "/about",
+    component: "dw-about",
+  },
   { path: "(.*)", redirect: "/" },
 ];
+
 
 window.addEventListener("DOMContentLoaded", () => {
   const outlet = document.getElementById("outlet");
