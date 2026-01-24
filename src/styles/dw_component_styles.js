@@ -385,15 +385,14 @@ details[open] .faq-chevron {
       gap: 2rem;
       padding-bottom: 0;
     }
-      .footer-link {
+      .footer-link{
   color: #0f172a;
   text-decoration: underline;
-  font-weight: 700;
-  cursor: pointer;
+  font-weight: 600;
 }
-
-.footer-link:hover {
+.footer-link:hover{
   opacity: 0.8;
+}
 }
 
     .footer-info ul {

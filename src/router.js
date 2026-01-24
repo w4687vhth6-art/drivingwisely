@@ -5,6 +5,7 @@ import "/src/components/views/myaccount.js";
 import "/src/components/views/instructors.js";
 import "/src/components/views/booking.js";
 import "/src/components/views/about.js";
+import "/src/components/views/instructor-signup.js";
 
 const routes = [
   {
@@ -31,6 +32,10 @@ const routes = [
     path: "/about",
     component: "dw-about",
   },
+  {
+  path: "/instructor-signup",
+  component: "dw-instructor-signup",
+},
   { path: "(.*)", redirect: "/" },
 ];
 

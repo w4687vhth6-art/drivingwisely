@@ -176,7 +176,19 @@ class HomeComponent extends LitElement {
                   <li>
                     <a class="footer-link" href="/about">About us</a>
                   </li>
-                  <li>Become an instructor</li>
+                  <li>
+  <a
+    class="footer-link"
+    href="/instructor-signup"
+    @click=${(e) => {
+      e.preventDefault();
+      window.history.pushState({}, "", "/instructor-signup");
+      window.dispatchEvent(new PopStateEvent("popstate"));
+    }}
+  >
+    Become an instructor
+  </a>
+</li>
                   <li>Careers</li>
                   <li>Privacy policy</li>
                 </ul>
