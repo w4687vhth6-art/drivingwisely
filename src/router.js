@@ -6,6 +6,7 @@ import "/src/components/views/instructors.js";
 import "/src/components/views/booking.js";
 import "/src/components/views/about.js";
 import "/src/components/views/instructor-signup.js";
+import "/src/components/views/map.js";
 
 const routes = [
   {
@@ -33,12 +34,15 @@ const routes = [
     component: "dw-about",
   },
   {
-  path: "/instructor-signup",
-  component: "dw-instructor-signup",
-},
+    path: "/map",
+    component: "dw-map",
+  },
+  {
+    path: "/instructor-signup",
+    component: "dw-instructor-signup",
+  },
   { path: "(.*)", redirect: "/" },
 ];
-
 
 window.addEventListener("DOMContentLoaded", () => {
   const outlet = document.getElementById("outlet");
