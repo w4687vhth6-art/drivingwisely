@@ -3,6 +3,11 @@ import maplibregl from "maplibre-gl";
 import maplibreCss from "maplibre-gl/dist/maplibre-gl.css?inline";
 
 class DwMap extends LitElement {
+  static properties = {
+    lat: { type: Number },
+    lng: { type: Number },
+  };
+
   static styles = [
     css`
       ${unsafeCSS(maplibreCss)}
@@ -27,6 +32,14 @@ class DwMap extends LitElement {
     `,
   ];
 
+  constructor() {
+    super();
+    this.lat = 51.4771;
+    this.lng = 0.0006;
+    this._map = null;
+    this._marker = null;
+  }
+
   firstUpdated() {
     const style = {
       version: 8,
@@ -47,17 +60,20 @@ class DwMap extends LitElement {
       ],
     };
 
-    const map = new maplibregl.Map({
+    this._map = new maplibregl.Map({
       container: this.renderRoot.querySelector("#map"),
       style,
-      center: [-0.09, 51.505],
+      center: [this.lng, this.lat],
       zoom: 13,
     });
 
-    map.addControl(new maplibregl.NavigationControl(), "top-right");
+    this._map.addControl(new maplibregl.NavigationControl(), "top-right");
 
-    // helps if inside flex / tabs / hidden areas at first render
-    setTimeout(() => map.resize(), 0);
+    this._marker = new maplibregl.Marker()
+      .setLngLat([this.lng, this.lat])
+      .addTo(this._map);
+
+    setTimeout(() => this._map.resize(), 0);
   }
 
   render() {
@@ -75,9 +91,44 @@ class DwMap extends LitElement {
   _driverDetails() {
     return html`
       <div class="dw-maps-container-item dw-maps-container-item-left">
-        Enter your details.
+        <label>
+          Latitude:
+          <input
+            type="number"
+            step="any"
+            .value=${this.lat}
+            @input=${(e) => {
+              this.lat = parseFloat(e.target.value);
+              this._updateCoordinates();
+            }}
+          />
+        </label>
+
+        <br /><br />
+
+        <label>
+          Longitude:
+          <input
+            type="number"
+            step="any"
+            .value=${this.lng}
+            @input=${(e) => {
+              this.lng = parseFloat(e.target.value);
+              this._updateCoordinates();
+            }}
+          />
+        </label>
       </div>
     `;
+  }
+
+  _updateCoordinates() {
+    if (!this._map) return;
+
+    const lngLat = [Number(this.lng), Number(this.lat)];
+
+    this._map.setCenter(lngLat);
+    this._marker.setLngLat(lngLat);
   }
 
   _mapDetails() {
