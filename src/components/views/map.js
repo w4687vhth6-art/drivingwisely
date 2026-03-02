@@ -70,4 +70,3 @@ class MapComponent extends LitElement {
 }
 
 customElements.define("dw-map", MapComponent);
-<div></div>;
