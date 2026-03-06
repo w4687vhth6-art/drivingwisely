@@ -16,11 +16,15 @@ class MapComponent extends LitElement {
       }
       .dw-map-main-item-1 {
         background-color: #be1b1bff;
-        flex: 1;
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
+
       .dw-map-main-item-2 {
         background-color: #6fbe1bff;
-        flex: 1;
+        flex: 7;
       }
       .dw-input {
         padding: 8px;
